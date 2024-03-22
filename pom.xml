@@ -15,6 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>8</java.version>
+		<spring-boot.version>2.6.7</spring-boot.version>
 		<base.version>1.0.1-SNAPSHOT</base.version>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
 		<jasypt.spring.version>3.0.3</jasypt.spring.version>
@@ -71,10 +72,11 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+            </plugin>
 			<plugin>
 				<groupId>io.confluent</groupId>
 				<artifactId>kafka-schema-registry-maven-plugin</artifactId>
