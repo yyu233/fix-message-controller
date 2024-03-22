@@ -1,0 +1,11 @@
+spring:
+    application:
+        name: fix-message-controller
+    profiles:
+        active: test
+    cloud:
+        config:
+            label: mark-yu
+    config:
+        password: JSu2RAieS5ObRaU
+        import: optional:configserver:http://tcs-batch:${spring.config.password}@tcs-cloudconfig-trainee.beaconfireinc.com/
