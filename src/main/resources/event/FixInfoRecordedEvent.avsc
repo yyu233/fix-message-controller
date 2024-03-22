@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "FixInfoRecordedEvent",
+  "namespace": "com.beaconfire.project.trading.allocationengine.domain",
+  "fields": [
+    {
+      "name": "FixId",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    },
+    {
+      "name": "FixString",
+      "type": {
+        "type": "string",
+        "avro.java.string": "String"
+      }
+    }
+  ]
+}

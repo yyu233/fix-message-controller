@@ -1,4 +1,4 @@
-package com.yyz.fixmessagecontroller.controller;
+package com.com.beaconfire.project.trading.allocationengine.controller;
 
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +25,10 @@ public class MainController {
     @PostMapping("/publish")
     public ResponseEntity<String> publishFIXMessage(String message) {
         String schemaRegistryUrl = properties.getSchemaRegistryUrl();
-        AvroMessageConverter<T> messageConverter = new AvroMessageConverter<>(schemaRegistryUrl);
-        EventPublisher<T> avroEventPublisher = new EventPublisher<>(producerFactory, properties, messageConverter);
+        AvroMessageConverter<com.beaconfire.project.trading.allocationengine.domain.FixInfoRecordedEvent> messageConverter = new AvroMessageConverter<>(schemaRegistryUrl);
+        EventPublisher<com.beaconfire.project.trading.allocationengine.domain.FixInfoRecordedEvent> avroEventPublisher = new EventPublisher<>(producerFactory, properties, messageConverter);
 
-        MessageWrapper<T> avronMessageWrapper = new MessageWrapper.Builder<T>()
+        MessageWrapper<com.beaconfire.project.trading.allocationengine.domain.FixInfoRecordedEvent> avronMessageWrapper = new MessageWrapper.Builder<com.beaconfire.project.trading.allocationengine.domain.FixInfoRecordedEvent>()
                 .topic("eric-c")
                 .messageKey()
                 .data(message)

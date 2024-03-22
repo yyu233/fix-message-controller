@@ -1,4 +1,4 @@
-package com.yyz.fixmessagecontroller;
+package com.com.beaconfire.project.trading.allocationengine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
