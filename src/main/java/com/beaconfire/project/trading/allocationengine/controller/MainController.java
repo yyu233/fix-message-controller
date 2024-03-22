@@ -1,4 +1,4 @@
-package com.com.beaconfire.project.trading.allocationengine.controller;
+package com.beaconfire.project.trading.allocationengine.controller;
 
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
